@@ -1,1 +1,0 @@
-# vef1-2020-hopverkefni1
