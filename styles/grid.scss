@@ -9,12 +9,14 @@
   flex-wrap: wrap;
   margin-left: ($gutter / -2);
   margin-right: ($gutter / -2);
+ 
 }
 
 .col {
   padding-left: ($gutter / 2);
   padding-right: ($gutter / 2);
   width: 100%;
+  margin-bottom: 2em;
 }
 
 @for $i from 1 through $columns {
@@ -40,7 +42,7 @@
 }
 
 @media (max-width: 499px) {
-  @for $i from 1 through $columns {
+  @for $i from 0 through $columns {
     .col-sm-#{$i} {
       width: ($i/$columns * 100 * 1%);
     }
@@ -48,5 +50,8 @@
     .offset-col-sm-#{$i} {
       margin-left: ($i/$columns * 100 * 1%);
     }
+  }
+  .col {
+    margin-bottom: 1em;
   }
 }

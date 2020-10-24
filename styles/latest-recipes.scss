@@ -1,0 +1,69 @@
+
+.lates_recipes{
+    background: linear-gradient(to top,$color-grey-lightest 71%, transparent 0%);
+    margin: 5rem 0rem;
+
+}
+.bottom_card{
+    background-color: $color-white;
+    box-shadow: 0px 7px 14px rgba(0, 0, 0, 0.05);
+    height: 100px;
+    padding: 1.5em;
+    & h4{
+        color:$color-grey-light;
+    }
+
+}
+.bottom_card_info{
+    display: flex;
+    align-items: center;
+
+    & p{
+        color:$color-grey-medium;
+        font-weight: 300;
+        margin-bottom: 0.5em;
+    }
+    &:last-of-type{
+        justify-content: space-between;
+    }
+}
+.latest_recipes_heading{
+    
+    & p{
+        color:$color-gold;
+        margin-bottom: 0.5em;
+        }
+}
+@media (max-width: 499px){
+    .latest_recipes_heading{
+    
+        & p{
+            margin-bottom: 0.5em;
+            text-align: center;
+        }
+        & h2{
+            margin-bottom: 1em;
+            text-align: center;
+        }
+    }
+}
+
+hr{
+    margin-top: 26px;
+    max-width: 430px;
+    border-top:1px solid $color-grey-lighter;
+    color: transparent;
+    &:nth-child(2){
+
+        margin-right: auto;
+        
+    }
+    &:nth-child(2){
+        margin-left: auto;
+   
+    }
+    
+}
+.recipes_img{
+    width: 100%;
+}

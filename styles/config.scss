@@ -2,11 +2,20 @@
 // grid, max-width á síðu, transitions,
 // liti, margin-bottom gildi sem eru sameiginleg
 
-$max-width: 1400px;
+$max-width: 1290px;
 
 $columns: 12;
-$gutter: 20px;
+$gutter: 30px;
 
 $bottom-margin: 2rem;
 
-
+// Allir litir eru hér
+$color-black: #000000;
+$color-white: #FFFFFF;
+$color-grey-lightest:#FAFAFA; // ljósgrá background liturinn í hero section og latest recipes
+$color-grey-lighter: #E7E7E7;
+$color-grey-light: #D0D0D0;
+$color-grey-medium: #9B9B9B;
+$color-grey: #5E5B69;
+$color-gold: #E3CDB1;
+$color-cream: #F7F1EB;
