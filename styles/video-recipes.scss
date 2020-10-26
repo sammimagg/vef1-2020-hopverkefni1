@@ -1,0 +1,60 @@
+.video_recipes_heading p {
+    color: #E3CDB1;
+    margin-bottom: 0.5em; }
+
+    .bottom_card {
+        background-color: $color-white;
+        box-shadow: 0px 7px 14px rgba(0, 0, 0, 0.05);
+        height: 100px;
+        padding: 1.5em;
+        & h4{
+            color:$color-grey-light;
+        }
+    
+    }
+    .bottom_card_info {
+        display: flex;
+        align-items: center;
+    
+        & p{
+            color:$color-grey-medium;
+            font-weight: 300;
+            margin-bottom: 0.5em;
+        }
+        &:last-of-type {
+            justify-content: space-between;
+        }
+    }
+
+    .recipes_img {
+        width: 100%;
+    }
+
+    .image img{
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .video_play_icon {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    
+    .video_recipes_img:hover .image_video {
+        opacity: 0.3;
+    }
+
+    .video_recipes_img:hover .video_play_icon {
+        opacity: 1;
+    }
