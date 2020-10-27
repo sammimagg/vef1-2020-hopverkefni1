@@ -3,7 +3,6 @@
 // liti, margin-bottom gildi sem eru sameiginleg
 
 $max-width: 1290px;
-
 $columns: 12;
 $gutter: 30px;
 
@@ -19,3 +18,16 @@ $color-grey-medium: #9B9B9B;
 $color-grey: #5E5B69;
 $color-gold: #E3CDB1;
 $color-cream: #F7F1EB;
+
+
+$breakpoints: (
+  'small':  500px,
+  'medium': 1000px,
+) !default;
+@mixin respond-to($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+      @media (max-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+      }
+    }
+}

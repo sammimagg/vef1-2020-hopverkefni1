@@ -1,21 +1,22 @@
-
-    
-  button {
-        width: 250px;
-        height: 52px;
-
-        border: 1px solid $color-gold;
-        box-sizing: border-box;
-        background-color: transparent;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 1rem;
-        text-align: center;
-        color: $color-gold;
-
-        &:hover{
-            background-color: $color-gold;
-            color: $color-white;
-        }
+button {
+    width: 250px;
+    height: 52px;
+    border: 1px solid $color-gold;
+    box-sizing: border-box;
+    background-color: transparent;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    color: $color-gold;
+    margin-bottom: 1em;
+    &:hover{
+        background-color: $color-gold;
+        color: $color-white;
     }
+    @include respond-to('small'){
+        width: 191px;
+        height: 42px;
+    }
+ }

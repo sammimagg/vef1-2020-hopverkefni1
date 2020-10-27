@@ -1,8 +1,34 @@
 
-.lates_recipes{
+.latest_recipes{
     background: linear-gradient(to top,$color-grey-lightest 71%, transparent 0%);
-    margin: 5rem 0rem;
+    & row:nth-last-of-type(){
+        padding-bottom: -1em;
+    }
+    @include respond-to('small'){
+        & p{
+            margin-bottom: 0.5em;
+            text-align: center;
+        }
+        & h2{
+            text-align: center;
+        }
+    }
+}
+.latest_recipes_heading{
+    & p{
+        color:$color-gold;
+        margin-bottom: 0.5em;
+        }
+}
+.recipes_img{
+    width: 100%;
+}
 
+.latest_recipes_card{
+    @include respond-to('small'){
+    margin-left: 1em;
+    margin-right: 1em;
+    }
 }
 .bottom_card{
     background-color: $color-white;
@@ -12,12 +38,10 @@
     & h4{
         color:$color-grey-light;
     }
-
 }
 .bottom_card_info{
     display: flex;
     align-items: center;
-
     & p{
         color:$color-grey-medium;
         font-weight: 300;
@@ -26,44 +50,15 @@
     &:last-of-type{
         justify-content: space-between;
     }
-}
-.latest_recipes_heading{
-    
-    & p{
-        color:$color-gold;
-        margin-bottom: 0.5em;
+    & a:last-of-type{
+        display: none;
+    }
+    @include respond-to('small'){
+        & a:first-of-type{
+            display: none;
         }
-}
-@media (max-width: 499px){
-    .latest_recipes_heading{
-    
-        & p{
-            margin-bottom: 0.5em;
-            text-align: center;
-        }
-        & h2{
-            margin-bottom: 1em;
-            text-align: center;
+        & a:last-of-type{
+            display: block;
         }
     }
-}
-
-hr{
-    margin-top: 26px;
-    max-width: 430px;
-    border-top:1px solid $color-grey-lighter;
-    color: transparent;
-    &:nth-child(2){
-
-        margin-right: auto;
-        
-    }
-    &:nth-child(2){
-        margin-left: auto;
-   
-    }
-    
-}
-.recipes_img{
-    width: 100%;
 }

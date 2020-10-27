@@ -1,0 +1,116 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 336px;
+    margin-top: auto;
+}
+.join_us {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    margin: 0;
+}
+.join_us_text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 17px;
+    color: $color-black;
+  }
+.social_media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.subscribe {
+    background-color: $color-black;
+    & h2{
+        color: $color-white;
+    }
+    & p {
+        color: $color-white;
+        margin-bottom: 0.5em;
+    }
+}
+.subscribe_heading{
+    display: flex;
+    justify-content:end ;
+    flex-direction: column;
+    & p{
+        color: $color-gold;
+    }
+    @include respond-to('small'){
+        &{
+            text-align: center;
+        }
+    }
+}
+.subscribe_container{
+    height: 339px;
+    display: flex;
+    align-items: center;
+}
+.subscribe_button{
+    margin-bottom: -1em;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.footer_text1{
+    @include respond-to('small') {
+    display: none;
+    }
+}
+.footer_text2{
+    display: none;
+    @include respond-to('small') {
+      display: block;
+    }
+}
+.form {
+    margin-top: -10px;
+}
+.email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    & label{
+        color:$color-white;
+    }
+    @include respond-to('small') {
+        width: 275px;
+    }
+}
+input {
+    background: transparent;
+    border: 1px $color-gold;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-top-style: hidden;
+    border-bottom-style: groove;
+    height: 60px;
+    width: 100%;
+    color: $color-white;
+    font-family: poppins;
+    font-size: 1.4em;
+    font-weight: bold;
+    @include respond-to('small') {
+      height: 45px;
+    }
+}
+.yamyam_link {
+    color: $color-grey-light;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
