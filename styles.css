@@ -260,7 +260,9 @@ hr {
 
 @media (max-width: 500px) {
   .mobile_hide {
-    display: none; } }
+    display: none; }
+  .center_mobile {
+    margin: auto; } }
 
 button {
   width: 250px;
@@ -440,32 +442,44 @@ button {
   .bottom_card_info:last-of-type {
     justify-content: space-between; }
 
-.recipes_img {
+.video_recipes_image {
+  position: relative;
   width: 100%; }
+  .video_recipes_image .images_of_recipe {
+    display: block;
+    width: 100%;
+    height: auto; }
+  .video_recipes_image .images_play_button {
+    height: 37.5px;
+    width: 30px;
+    position: absolute;
+    z-index: 2;
+    display: none;
+    transition: .5s ease;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto; }
 
-.image img {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden; }
-
-.video_play_icon {
-  transition: .5s ease;
-  opacity: 0;
+.overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center; }
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #E3CDB1; }
 
-.video_recipes_img:hover .image_video {
-  opacity: 0.3; }
+.video_recipes_image:hover .overlay {
+  opacity: 0.7; }
 
-.video_recipes_img:hover .video_play_icon {
-  opacity: 1; }
+.video_recipes_image:hover .images_play_button {
+  display: block; }
 
 .footer {
   display: flex;
