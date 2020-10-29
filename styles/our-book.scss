@@ -1,0 +1,74 @@
+.grid {
+    margin: auto;
+    max-width: 1290px;
+    overflow: visible;
+}
+
+.our_book_is_out {
+    padding-top: 100px;
+    background-color:$color-cream;
+    background-position: right;
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+.our_books_content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+
+    @media (max-width: 499px){
+
+    }
+}
+.our_books_heading {
+    flex-direction: column;
+    justify-content: center;
+
+    & h1{
+        font-size: 1em;
+        color:$color-gold;
+        margin-bottom: 0.5em;
+    }
+    & h2{
+        color:$color-black;
+        margin-bottom: 1em;
+    }
+}
+
+
+.our_book_text {
+    color: $color-grey;
+    line-height: 32px;
+}
+
+@media (max-width: 499px){
+    .our_books_heading{
+
+        & h1{
+            margin-bottom: 0.5em;
+            text-align: center;
+        }
+        & h2{
+            margin-bottom: 1em;
+            text-align: center;
+        }
+    }
+}
+
+.our_books_img {
+    width: 100%;
+    background: url(recipebook.png); 
+    position: relative;
+    top: 100px;
+    z-index: 30000;
+}
+
+.book_img {
+    position: relative;
+    max-width: 100%;
+     overflow: visible;
+}
