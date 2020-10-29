@@ -31,14 +31,14 @@
     line-height: 32px;
 }
 
-@media (max-width: 499px){
-    .hero_heading{
+@media (max-width: 499px) {
+    .hero_heading {
     
-        & p{
+        & p {
             margin-bottom: 0.5em;
             text-align: center;
         }
-        & h1{
+        & h2 {
             margin-bottom: 1em;
             text-align: center;
         }
