@@ -27,8 +27,6 @@
         color: $color-grey-medium;
     }
 }
-
-
   /* menu */
 
   .header .menu {
@@ -76,12 +74,6 @@
   .header .menu-icon .navicon:after {
     top: -5px;
   }
-
-  .row{
-    flex-wrap: nowrap;
-  }
-
-  /* menu btn */
 
   .header .menu-btn {
     display: none;
@@ -146,5 +138,8 @@
 
     .header li a :nth-child(1) {
       visibility: visible; 
+    }
+    .header_fullscreen{
+      margin-left:-30px;
     }
 }
