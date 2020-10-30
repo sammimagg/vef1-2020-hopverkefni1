@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .our_book_is_out .grid {
     margin: auto;
     max-width: 1290px;
@@ -45,6 +46,34 @@
     .our_books_heading{
 
         & h1{
+=======
+.grid {
+    max-width: 1290px;
+    max-height: 670px;
+    margin: 0 auto;
+}
+
+.our_book_is_out {
+    background-color:$color-cream;
+    margin: auto;
+    width: 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+}
+
+.our_books_heading p{
+
+    & p{
+        color:$color-gold;
+        margin-bottom: 0.5em;
+        }
+}
+@media (max-width: 499px){
+    .our_books_heading{
+
+        & p{
+>>>>>>> Stashed changes
             margin-bottom: 0.5em;
             text-align: center;
         }
@@ -55,6 +84,7 @@
     }
 }
 
+<<<<<<< Updated upstream
 .our_books_img {
     width: 100%;
     background: url(recipebook.png); 
@@ -67,4 +97,38 @@
     position: relative;
     max-width: 100%;
      overflow: visible;
+=======
+.our_books_text {
+    font-size: 18px;
+    line-height: 32px; 
+}
+
+.our_books {
+    display: flex;
+    height: 800px;
+    background-color: #F7F1EB;
+    background-repeat: no-repeat;
+    background-size: 1600px 670px;
+    left: 30.65px;
+    margin-bottom: 2rem; 
+}
+
+  .our_books_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    width: 440.35px;
+    height: 607.62px;
+    left: 30.65px;
+    top: 0px;
+    background: url(recipebook.png); 
+}
+
+  .our_books_content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    height: 607.62px; 
+>>>>>>> Stashed changes
 }
