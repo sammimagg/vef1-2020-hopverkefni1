@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    z-index: 3;
+    z-index: 100;
     position: fixed;
     height: 80px;
     top: 0px;
@@ -26,7 +26,16 @@
     & a{
         color: $color-grey-medium;
     }
+
+    @include respond-to('small'){
+      & .logo{
+        padding: 15px 10px;
+      }
+    }
+
 }
+
+
   /* menu */
 
   .header .menu {
@@ -75,12 +84,15 @@
     top: -5px;
   }
 
+
+  /* menu btn */
+
   .header .menu-btn {
     display: none;
   }
 
   .header .menu-btn:checked ~ .menu {
-    max-height: 570px;
+    max-height: 100%;
   }
 
   .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -100,9 +112,8 @@
     top: 0;
   }
 
-  /* 48em = 768px */
 
-  @media (min-width: 48em) {
+  @media (min-width: 500px) {
     .header li {
       float: left;
     }
@@ -121,10 +132,10 @@
       visibility: hidden;
     }
   }  
-  @media (max-width: 48em) {
+  @media (max-width: 500px) {
     .header .menu {
-      flex-direction: column;
       background:$color-grey-lightest;
+      height: 100vh;
     }
     
     .header li a{
