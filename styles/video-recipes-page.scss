@@ -1,0 +1,66 @@
+.hero_video_recipes{
+    height: 650px;
+    background-image: url(img/Video.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    position: relative;
+}
+
+.hero_video_recipes:after {
+    content: "";
+    display: block;
+    width: 800px;
+    height: 650px;
+    position: absolute;
+    top: 0px;
+    left: 540px;
+    background-image: url(img/Shadow.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, #000000 100%);
+}
+
+.hero_video_recipes h1 {
+    height: 80px;
+    //color: $color-white;//
+}
+
+.hero_video_recipes .labels {
+    height: 17px;
+}
+
+.hero_text p {
+    position: absolute;
+    height: 128px;
+    width: 550px;
+    left: 1px;
+    top: 154px;
+    display: flex;
+    align-items: center;
+    //color: $color-white;//
+}
+
+.labels {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: table;
+    
+    & ul li:nth-child(1){
+        list-style-image:url(img/Level-Icon.png);
+        }
+        ul li:nth-child(2){
+        list-style-image:url(img/Servings-Icon.png);
+        }
+        ul li:nth-child(3){
+        list-style-image:url(img/Preparation-Icon.png);
+    }
+
+    & ul {
+        list-style-type: none;
+        float: left;
+        display: flex;
+        text-decoration: none;
+        justify-content: space-between;
+    }
+}
