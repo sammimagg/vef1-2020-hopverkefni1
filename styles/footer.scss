@@ -3,38 +3,15 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
-<<<<<<< Updated upstream
-    margin-top: auto;
-    & hr{
-        margin-top: 4.44em;
-        width: $max-width;
-    }
-}
-.footer_text1{
-    @include respond-to('small') {
-    display: none;
-    }
-}
-.footer_text2{
-    display: none;
-    @include respond-to('small') {
-      display: block;
-    }
-=======
     height: 336px;
     margin-top: auto;
->>>>>>> Stashed changes
 }
 .join_us {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-<<<<<<< Updated upstream
-    padding-top: 70px;
-=======
     padding-top: 100px;
->>>>>>> Stashed changes
     padding-bottom: 80px;
     margin: 0;
 }
@@ -48,18 +25,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-<<<<<<< Updated upstream
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-top: 2em;
-    @include respond-to('small'){
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-=======
     padding-left: 50px;
     padding-right: 50px;
->>>>>>> Stashed changes
 }
 .subscribe {
     background-color: $color-black;
@@ -78,46 +45,35 @@
     & p{
         color: $color-gold;
     }
-<<<<<<< Updated upstream
     & p:first-of-type{
         display: none;
     }
-=======
->>>>>>> Stashed changes
     @include respond-to('small'){
         &{
             text-align: center;
         }
-<<<<<<< Updated upstream
         & p:first-of-type{
             display: block;
         }
         & p:last-of-type{
             display: none;
         }
-=======
->>>>>>> Stashed changes
     }
 }
 .subscribe_container{
     height: 339px;
     display: flex;
     align-items: center;
-<<<<<<< Updated upstream
     @include respond-to('small'){
         margin: 1em 0em;
     }
-=======
->>>>>>> Stashed changes
 }
 .subscribe_button{
     margin-bottom: -1em;
     display: flex;
     flex-direction: row-reverse;
 }
-<<<<<<< Updated upstream
 
-=======
 .footer_text1{
     @include respond-to('small') {
     display: none;
@@ -129,7 +85,6 @@
       display: block;
     }
 }
->>>>>>> Stashed changes
 .form {
     margin-top: -10px;
 }
@@ -162,19 +117,16 @@ input {
     }
 }
 .yamyam_link {
-<<<<<<< Updated upstream
     margin-top: 1em;
     & a{
         color: $color-grey-light;
     }
-=======
     color: $color-grey-light;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 21px;
     text-decoration: none;
->>>>>>> Stashed changes
     &:hover {
         text-decoration: underline;
     }
