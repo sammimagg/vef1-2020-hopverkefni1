@@ -1,6 +1,19 @@
-.video_recipes_heading p {
-    color: #E3CDB1;
-    margin-bottom: 0.5em; }
+.video_recipes{
+    @include respond-to('small'){
+        margin: 0em 1em;
+    }
+    
+}
+
+.video_recipes_heading{
+    & p {
+        color: #E3CDB1;
+        margin-bottom: 0.5em;
+    }
+    @include respond-to('small'){
+        text-align: center;
+    }
+} 
 
 .bottom_card {
     background-color: $color-white;
