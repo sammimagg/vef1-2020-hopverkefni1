@@ -71,7 +71,6 @@
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
-    line-height: 17px;
     color: $color-black;
     list-style: none;
   }
@@ -112,7 +111,10 @@
 }
 .amount {
   font-size: 36px;
-  color: $color-gold;
+  color: $color-grey-medium;
   margin-right: 50px;
   font-family: "Playfair Display";
+  & span.amount {
+    color: $color-gold;
+  }
 }
