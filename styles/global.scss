@@ -10,6 +10,12 @@ body {
   font-weight: 500;
   padding-left: 10px;
   padding-right: 10px;
+  @include respond-to('small'){
+  &{
+    padding-left: 0px;
+    padding-right: 0px
+  }
+  }
 }
 p{
   @include respond-to('small'){
@@ -77,6 +83,6 @@ margin: auto 0;
 }
 
 .center_mobile{
-  margin: auto;
+  margin: 0em auto;
 }
 }
