@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently npm:sass-watch npm:browser-sync",
+    "dev": "concurrently \"npm run sass-watch\" \"npm run browser-sync\" ",
     "browser-sync": "browser-sync start --server",
     "sass": "node-sass --source-map-embed styles.scss styles.css",
-    "sass-watch": "node-sass --source-map-embed --watch *.scss --recursive styles.css",
+    "sass-watch": "node-sass --source-map-embed --watch styles.scss --recursive styles.css",
     "lint": "stylelint styles.scss ./**/*.scss"
   },
   "repository": {
@@ -25,6 +25,7 @@
     "lint": "^0.7.0"
   },
   "dependencies": {
+    "concurrently": "^5.3.0",
     "node-sass": "^4.14.1"
   }
 }
