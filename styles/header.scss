@@ -5,7 +5,7 @@
     height: 80px;
     top: 0px;
     background-color: $color-white;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 6px 12px rgba(196, 158, 158, 0.05);
     & ul{
         list-style: none;
         overflow: hidden;
@@ -128,7 +128,7 @@
     .header .menu-icon {
       display: none;
     }
-    & li:nth-child(1) {
+    .header li:nth-child(1) {
       visibility: hidden;
     }
   }  
