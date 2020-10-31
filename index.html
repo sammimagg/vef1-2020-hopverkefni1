@@ -3,7 +3,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Hópverkefni 1</title>
-        <link rel="stylesheet" href="grid-overlay.css">
+        <!--<link rel="stylesheet" href="grid-overlay.css">-->
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
@@ -12,16 +12,18 @@
             <div class="grid">
                 <div class="row">
                     <div class="col col-2 col-sm-0">
-                        <img src="img/Logotype.png" class="logo"></img>
+                        <a href="index.html">
+                            <img src="img/Logotype.png" class="logo"></img>
+                        </a>
                     </div>
                     <div class="col col-10 col-sm-12 header_fullscreen">
                         <input class="menu-btn" type="checkbox" id="menu-btn" />
                         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
                         <ul class="menu">
-                            <li><a href="/index.html">Home</a></li>
-                            <li><a href="/pages/recipe.html">Recipes</a></li>
-                            <li><a href="/pages/video-recipe.html">Videos</a></li>
-                            <li><a href="/index.html">About us</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="pages/latest-recipes.html">Recipes</a></li>
+                            <li><a href="pages/video-recipe.html">Videos</a></li>
+                            <li><a href="index.html">About</a></li>
                         </ul>
                     </div>
                 </div>    
@@ -29,10 +31,36 @@
         </header>
         <!--                         Header Endar                               -->
         <main>
-        <!--                         Slider/hero Alexia                              -->
-        <section>
-        </section>
-        <!--                         Endar Alexia                               -->
+            <section class="hero">
+                <section class="grid">
+                    <div class="hero_content">
+                        <div class="row">
+                            <div class="hero_heading col col-12 col-md-10 offset-col-md-1 col-sm-12 offset-col-sm-0 ">
+                                <p>Our latest recipe</p>
+                                <h1>Pumpkin pie</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="hero_text col col-6 col-md-5 offset-col-md-1 col-sm-6 offset-col-sm-0 ">
+                                <p class="hero_text">
+                                    Pumpkin pie is a sweet dessert pie with a spiced,
+                                    pumpkin-based custard filling. The pumpkin is a symbol
+                                    of harvest time, and pumpkin pie is often eaten during 
+                                    the fall and early winter.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row"> 
+                            <div class="hero_button col col-12 col-md-10 offset-col-md-1 col-sm-12 offset-col-sm-0 ">
+                                <a href="pages/recipe.html">
+                                    <button>See more</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>    
+            </section>
+            <!--                         Endar Alexia                               -->
         <!--                         Latest recipes Sammi                       -->
         <section class="latest_recipes">
             <section class="grid">
@@ -54,8 +82,8 @@
                                 </div>
                                 <div class="bottom_card_info">  
                                     <h3>Lax sushi rolls</h3>
-                                    <a href="#">Read more</a>
-                                    <a href="#">See</a>
+                                    <a href="pages/recipe.html">Read more</a>
+                                    <a href="pages/recipe.html">See</a>
                                 </div>
                             </div>
                         </div>        
@@ -71,8 +99,8 @@
                                 </div>
                                 <div class="bottom_card_info">  
                                     <h3>Lax sushi rolls</h3>
-                                    <a href="#">Read more</a>
-                                    <a href="#">See</a>
+                                    <a href="pages/recipe.html">Read more</a>
+                                    <a href="pages/recipe.html">See</a>
                                 </div>
                             </div>
                         </div>   
@@ -88,8 +116,8 @@
                                 </div>
                                 <div class="bottom_card_info">  
                                     <h3>Lax sushi rolls</h3>
-                                    <a href="#">Read more</a>
-                                    <a href="#">See</a>
+                                    <a href="pages/recipe.html">Read more</a>
+                                    <a href="pages/recipe.html">See</a>
                                 </div>
                             </div>
                         </div>   
@@ -107,8 +135,8 @@
                                 </div>
                                 <div class="bottom_card_info">  
                                     <h3>Lax sushi rolls</h3>
-                                    <a href="#">Read more</a>
-                                    <a href="#">See</a>
+                                    <a href="pages/recipe.html">Read more</a>
+                                    <a href="pages/recipe.html">See</a>
                                 </div>
                             </div>
                         </div>   
@@ -124,8 +152,8 @@
                                 </div>
                                 <div class="bottom_card_info">  
                                     <h3>Lax sushi rolls</h3>
-                                    <a href="#">Read more</a>
-                                    <a href="#">See</a>
+                                    <a href="pages/recipe.html">Read more</a>
+                                    <a href="pages/recipe.html">See</a>
                                 </div>
                             </div>
                         </div>   
@@ -141,8 +169,8 @@
                                 </div>
                                 <div class="bottom_card_info">  
                                     <h3>Lax sushi rolls</h3>
-                                    <a href="#">Read more</a>
-                                    <a href="#">See</a>
+                                    <a href="pages/recipe.html">Read more</a>
+                                    <a href="pages/recipe.html">See</a>
                                 </div>
                             </div>
                         </div>   
@@ -155,7 +183,9 @@
                     </div>
                     <div class="col col-4 col-sm-12">
                         <div class="center">
-                            <button>See more</button>
+                            <a href="pages/latest-recipes.html">
+                                <button>See more</button>
+                            </a>
                         </div>
                     </div>
                     <div class="col col-4">
@@ -193,93 +223,94 @@
             </section>
         </section>
         <!--                         Our book Endar Silja                       -->
-        <!--                         Video recipes Andrea og Alexia             -->
-        <section class="video_recipes">
-            <section class="grid">
-                <div class="row">
-                    <div class="video_recipes_heading col col-12 col-md-10 offset-col-md-1 col-sm-12 offset-col-sm-0">
-                        <p>Want some action?</p>
-                        <h2><span>Check out our </span>video recipes</h2>
+       <!--                         Video recipes Andrea og Alexia             -->
+       <section class="video_recipes">
+        <div class="grid">
+            <div class="row">
+                <div class="video_recipes_heading col col-12 col-md-10 offset-col-md-1 col-sm-12 offset-col-sm-0">
+                    <p>Want some action?</p>
+                    <h2><span>Check out our </span>video recipes</h2>
+                </div>
+            </div>
+            <div class="row">    
+                <div class="col col-4 col-md-5 col-sm-12 offset-col-sm-0 ">
+                    <div class="video_recipes_image">
+                        <img src="img/Play-Icon.png" alt="" class="images_play_button">
+                        <img src="img/Legumes-printaniers.png" alt="" class="images_of_recipe">
+                        <div class="overlay">
+                        </div>
+                    </div>
+                    <div class="bottom_card">
+                        <div class="bottom_card_info">
+                            <p>Ágúst 2016</p>
+                        </div>
+                        <div class="bottom_card_info">  
+                            <h3>Legumes printaiers</h3>
+                            <a href="#">See</a>
+                        </div>
                     </div>
                 </div>
-                <div class="row">    
-                    <div class="col col-4 col-md-5 col-sm-12 offset-col-sm-0 ">
-                        <div class="video_recipes_image">
-                            <img src="img/Play-Icon.png" alt="" class="images_play_button">
-                            <img src="img/Legumes-printaniers.png" alt="" class="images_of_recipe">
-                            <div class="overlay">
-                            </div>
-                        </div>
-                        <div class="bottom_card">
-                            <div class="bottom_card_info">
-                                <p>Ágúst 2016</p>
-                            </div>
-                            <div class="bottom_card_info">  
-                                <h3>Legumes printaiers</h3>
-                                <a href="#">See</a>
-                            </div>
+
+
+                <div class="col col-4 col-md-5 col-sm-12 offset-col-sm-0 ">
+                    <div class="video_recipes_image">
+                        <img src="img/Play-Icon.png" alt="" class="images_play_button">
+                        <img src="img/blossoming-cookie.png" alt="" class="images_of_recipe">
+                        <div class="overlay">
                         </div>
                     </div>
-
-
-                    <div class="col col-4 col-md-5 col-sm-12 offset-col-sm-0 ">
-                        <div class="video_recipes_image">
-                            <img src="img/Play-Icon.png" alt="" class="images_play_button">
-                            <img src="img/blossoming-cookie.png" alt="" class="images_of_recipe">
-                            <div class="overlay">
-                            </div>
+                    <div class="bottom_card">
+                        <div class="bottom_card_info">
+                            <p>Ágúst 2016</p>
                         </div>
-                        <div class="bottom_card">
-                            <div class="bottom_card_info">
-                                <p>Ágúst 2016</p>
-                            </div>
-                            <div class="bottom_card_info">  
-                                <h3>Blossoming cookie</h3>
-                                <a href="#">See</a>
-                            </div>
+                        <div class="bottom_card_info">  
+                            <h3>Blossoming cookie</h3>
+                            <a href="#">See</a>
                         </div>
                     </div>
-
-
-                    <div class="col col-4 col-md-5 col-sm-12 offset-col-sm-0 ">
-                        <div class="video_recipes_image">
-                            <img src="img/Play-Icon.png" alt="" class="images_play_button">
-                            <img src="img/questches-pie.png" alt="" class="images_of_recipe">
-                            <div class="overlay">
-                            </div>
-                        </div>
-                        <div class="bottom_card">
-                            <div class="bottom_card_info">
-                                <p>Ágúst 2016</p>
-                            </div>
-                            <div class="bottom_card_info">  
-                                <h3>Blossoming cookie</h3>
-                                <a href="#">See</a>
-                            </div>
-                        </div>
-                    </div>
-                    
                 </div>
-                <div class="row">
-                    <div class="col col-4">
-                        <hr>
+
+
+                <div class="col col-4 col-md-5 col-sm-12 offset-col-sm-0 ">
+                    <div class="video_recipes_image">
+                        <img src="img/Play-Icon.png" alt="" class="images_play_button">
+                        <img src="img/questches-pie.png" alt="" class="images_of_recipe">
+                        <div class="overlay">
+                        </div>
                     </div>
-                    <div class="col col-4 col-sm-12">
-                        <div class="center">
+                    <div class="bottom_card">
+                        <div class="bottom_card_info">
+                            <p>Ágúst 2016</p>
+                        </div>
+                        <div class="bottom_card_info">  
+                            <h3>Blossoming cookie</h3>
+                            <a href="#">See</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col col-4">
+                    <hr>
+                </div>
+                <div class="col col-4 col-sm-12">
+                    <div class="center">
+                        <a href="pages/latest-recipes.html">
                             <button>See more</button>
-                        </div>
+                        </a>
                     </div>
                 </div>
-            </section>
-        </section>
-        <!--                         Our book Endar Silja                       -->
-        <!--                         Video recipes Andrea og Alexia             -->
-        <section>
-        </section>
-        <!--                         Video recipes Endar Andrea og Alexia       -->
+                <div class="col col-4">
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--                         Video recipes Endar Andrea og Alexia       -->
         </main>
-        <!--                         Footer Sammi og Silja                       -->
-        <footer>
+         <!--                         Footer Sammi og Silja                       -->
+         <footer>
             <section class="subscribe">
                 <div class="grid">
                         <div class="row subscribe_container">
@@ -305,22 +336,26 @@
             <section class="footer">
                 <div class="grid">
                     <div class="row">
-                        <div class="col col-10 offset-col-1">
+                        <div class="col col-12">
                             <hr>
                         </div>
                     </div>
                     <div class="row join_us">
-                        <p class="join_us_text">Come and join us for more recipes</p>
-                        <div class="social_media">
-                            <img src="img/Facebook-Icon.svg" alt="">
-                            <img src="img/Twitter-Icon.svg" alt="">
-                            <img src="img/YouTube-Icon.svg" alt="">
+                        <div class="col col-4 offset-col-4 col-sm-12 offset-col-sm-0">
+                            <p class="join_us_text">Come and join us for more recipes</p>
+                            <div class="social_media">
+                                <img src="img/Facebook-Icon.svg" alt="">
+                                <img src="img/Twitter-Icon.svg" alt="">
+                                <img src="img/YouTube-Icon.svg" alt="">
+                            </div>
+                            <div class="yamyam_link">
+                                <a href="http.yamyam.com">yamyam.com</a>
+                            </div>
                         </div>
-                            <a class="yamyam_link" href="http.yamyam.com">yamyam.com</a>
-                      </div>
-                    </div>            
-                </div>
+                    </div>
+                </div>            
             </section>
         </footer>
         <!--                         Footer Endar Sammi og Silja                    -->
+    </body>
 </html>

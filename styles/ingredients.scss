@@ -1,0 +1,58 @@
+.ingredient p{
+  color: $color-grey-medium !important;
+}
+.ingredients_container {
+    margin-top: 3em;
+    & h2{
+      margin-bottom: 1em;
+      color: $color-grey-light;
+    }
+
+  }
+  .recipe_ingredient {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding: 0;
+   & p {
+      font-weight: 300;
+      font-size: 18px;
+      margin-bottom: 1em;
+      color: $color-black;
+    }
+
+  }
+  .method {
+    display: flex;
+    h2 {
+        font-size: 40px;
+        color: $color-grey-light ;
+        margin-bottom: 40px;
+        margin-top: 70px;
+    }
+  }
+  .method_container {
+    & p {
+    font-size: 18px; 
+    font-weight: 300;
+    color: $color-grey;
+    margin-bottom: 1rem;
+    line-height: 32px;
+    margin-bottom: 3em;
+    }
+    & h2{
+      margin-bottom: 1.5em ;
+      color: $color-grey-light;
+    }
+  }
+  .amount {
+    font-size: 36px;
+    color: $color-gold;
+    margin-right: 50px;
+    font-family: "Playfair Display";
+    & span.amount {
+      color: $color-gold;
+    }
+  }

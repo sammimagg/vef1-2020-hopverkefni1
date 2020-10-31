@@ -35,21 +35,12 @@
 
 }
 
-
-  /* menu */
-
   .header .menu {
     clear: both;
     max-height: 0;
     margin-top: 10px;
     transition: max-height .2s ease-out;
-    & li{
-      border-bottom: 1px solid $color-cream;
-    }
   }
-
-  /* menu icon */
-
   .header .menu-icon {
     cursor: pointer;
     display: inline-block;
@@ -58,7 +49,6 @@
     position: relative;
     user-select: none;
   }
-
   .header .menu-icon .navicon {
     background: #333;
     display: block;
@@ -67,7 +57,6 @@
     transition: background .2s ease-out;
     width: 18px;
   }
-
   .header .menu-icon .navicon:before,
   .header .menu-icon .navicon:after {
     background: #333;
@@ -149,6 +138,9 @@
       color: $color-black;
       text-align: center;
       font-family: 'Playfair Display';
+      border-bottom: 1px solid $color-cream;
+
+      
     }
 
     .header li a :nth-child(1) {

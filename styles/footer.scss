@@ -3,15 +3,29 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    height: 336px;
     margin-top: auto;
+    & hr{
+        margin-top: 4.44em;
+        width: $max-width;
+    }
+}
+.footer_text1{
+    @include respond-to('small') {
+    display: none;
+    }
+}
+.footer_text2{
+    display: none;
+    @include respond-to('small') {
+      display: block;
+    }
 }
 .join_us {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 70px;
     padding-bottom: 80px;
     margin: 0;
 }
@@ -25,8 +39,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 2em;
+    @include respond-to('small'){
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
 .subscribe {
     background-color: $color-black;
@@ -74,17 +93,6 @@
     flex-direction: row-reverse;
 }
 
-.footer_text1{
-    @include respond-to('small') {
-    display: none;
-    }
-}
-.footer_text2{
-    display: none;
-    @include respond-to('small') {
-      display: block;
-    }
-}
 .form {
     margin-top: -10px;
 }
@@ -121,12 +129,6 @@ input {
     & a{
         color: $color-grey-light;
     }
-    color: $color-grey-light;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 21px;
-    text-decoration: none;
     &:hover {
         text-decoration: underline;
     }
