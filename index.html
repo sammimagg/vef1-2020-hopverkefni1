@@ -3,11 +3,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Hópverkefni 1</title>
-        <!--<link rel="stylesheet" href="grid-overlay.css">-->
+        <link rel="stylesheet" href="grid-overlay.css">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <!--                         Header byrjar -Andrea                      -->
         <header class="header">
             <div class="grid">
                 <div class="row">
@@ -29,10 +28,9 @@
                 </div>    
             </div>
         </header>
-        <!--                         Header Endar                               -->
         <main>
             <section class="hero">
-                <section class="grid">
+                <div class="grid">
                     <div class="hero_content">
                         <div class="row">
                             <div class="hero_heading col col-12 col-md-10 offset-col-md-1 col-sm-12 offset-col-sm-0 ">
@@ -52,18 +50,18 @@
                         </div>
                         <div class="row"> 
                             <div class="hero_button col col-12 col-md-10 offset-col-md-1 col-sm-12 offset-col-sm-0 ">
-                                <a href="pages/recipe.html">
-                                    <button>See more</button>
-                                </a>
+                                <div class="center_mobile">
+                                    <a href="pages/recipe.html">
+                                        <button>See more</button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </section>    
+                </div>    
             </section>
-            <!--                         Endar Alexia                               -->
-        <!--                         Latest recipes Sammi                       -->
-        <section class="latest_recipes">
-            <section class="grid">
+            <section class="latest_recipes">
+            <div class="grid">
                 <div class="row">
                     <div class="latest_recipes_heading col col-12 col-sm-12 offset-col-sm-0">
                         <p>Get ready to get busy</p>
@@ -175,6 +173,112 @@
                             </div>
                         </div>   
                     </div>
+                </div>
+                <div class="row">
+                    <div class="col col-4">
+                        <hr>
+                    </div>
+                    <div class="col col-4 col-sm-12">
+                        <div class="center">
+                            <a href="pages/latest-recipes.html">
+                                <button>See more</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col col-4">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <section class="our_book_is_out">
+            <div class="grid">
+                <div class="our_books_content">
+                    <div class="row">
+                        <div class="our_books_heading col col-5 offset-col-1 col-md-8 col-sm-12 offset-col-sm-0">
+                            <h1>Announcement time</h1>
+                            <h2>Our book is out</h2>
+                            <p class="our_book_text">
+                                Pumpkin pie is a sweet dessert pie with a spiced,
+                                pumpkin-based custard filling. The pumpkin is a symbol of
+                                harvest time, and pumpkin pie is often eaten during the fall
+                                and early winter.
+                            </p>
+                            <div class="center col col-5 offset-col-1 col-md-8 col-sm-12 offset-col-sm-0">
+                                <div class="center_mobile">
+                                    <button>See more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-4 col-md-12 col-sm-12 offset-col-sm-0">
+                            <div class="our_books_img">
+                                <img class="book_img" src="img/recipebook.png" alt="">
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            </section>
+            <section class="video_recipes">
+            <div class="grid">
+                <div class="row">
+                    <div class="video_recipes_heading col col-12 col-md-10 offset-col-md-1 col-sm-12 offset-col-sm-0">
+                        <p>Want some action?</p>
+                        <h2><span>Check out our </span>video recipes</h2>
+                    </div>
+                </div>
+                <div class="row">    
+                    <div class="col col-4 col-md-5 col-sm-12 offset-col-sm-0 ">
+                        <div class="video_recipes_image">
+                            <img src="img/Play-Icon.png" alt="" class="images_play_button">
+                            <img src="img/Legumes-printaniers.png" alt="" class="images_of_recipe">
+                            <div class="overlay">
+                            </div>
+                        </div>
+                        <div class="bottom_card">
+                            <div class="bottom_card_info">
+                                <p>Ágúst 2016</p>
+                            </div>
+                            <div class="bottom_card_info">  
+                                <h3>Legumes printaiers</h3>
+                                <a href="#">See</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-4 col-md-5 col-sm-12 offset-col-sm-0 ">
+                        <div class="video_recipes_image">
+                            <img src="img/Play-Icon.png" alt="" class="images_play_button">
+                            <img src="img/blossoming-cookie.png" alt="" class="images_of_recipe">
+                            <div class="overlay">
+                            </div>
+                        </div>
+                        <div class="bottom_card">
+                            <div class="bottom_card_info">
+                                <p>Ágúst 2016</p>
+                            </div>
+                            <div class="bottom_card_info">  
+                                <h3>Blossoming cookie</h3>
+                                <a href="#">See</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-4 col-md-5 col-sm-12 offset-col-sm-0 ">
+                        <div class="video_recipes_image">
+                            <img src="img/Play-Icon.png" alt="" class="images_play_button">
+                            <img src="img/questches-pie.png" alt="" class="images_of_recipe">
+                            <div class="overlay">
+                            </div>
+                        </div>
+                        <div class="bottom_card">
+                            <div class="bottom_card_info">
+                                <p>Ágúst 2016</p>
+                            </div>
+                            <div class="bottom_card_info">  
+                                <h3>Blossoming cookie</h3>
+                                <a href="#">See</a>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
                 <div class="row">
@@ -192,125 +296,11 @@
                         <hr>
                     </div>
                 </div>
-            </section>
-        </section>
-        <!--                         Latest recipes Sammi                       -->
-        <!--                         Our book Silja                             -->
-        <section class="our_book_is_out">
-            <section class="grid">
-                <div class="our_books_content">
-                    <div class="row">
-                        <div class="our_books_heading col col-5 offset-col-1 offset-col-l-2 col-l-8 col-m-8 col-s-12">
-                            <h1>Announcement time</h1>
-                            <h2>Our book is out</h2>
-                            <p class="our_book_text">
-                                Pumpkin pie is a sweet dessert pie with a spiced,
-                                pumpkin-based custard filling. The pumpkin is a symbol of
-                                harvest time, and pumpkin pie is often eaten during the fall
-                                and early winter.
-                            </p>
-                            <div class="center col col-5 offset-col-1 offset-col-l-2 col-l-8 col-m-8 col-s-12">
-                                <button>See more</button>
-                            </div>
-                        </div>
-                        <div class="col col-4 offset-col-1 col-l-12 col-m-12 col-s-12">
-                            <div class="our_books_img">
-                                <img class="book_img" src="img/recipebook.png" alt="">
-                            </div>
-                        </div>
-                    </div>  
-                </div>
-            </section>
-        </section>
-        <!--                         Our book Endar Silja                       -->
-       <!--                         Video recipes Andrea og Alexia             -->
-       <section class="video_recipes">
-        <div class="grid">
-            <div class="row">
-                <div class="video_recipes_heading col col-12 col-md-10 offset-col-md-1 col-sm-12 offset-col-sm-0">
-                    <p>Want some action?</p>
-                    <h2><span>Check out our </span>video recipes</h2>
-                </div>
-            </div>
-            <div class="row">    
-                <div class="col col-4 col-md-5 col-sm-12 offset-col-sm-0 ">
-                    <div class="video_recipes_image">
-                        <img src="img/Play-Icon.png" alt="" class="images_play_button">
-                        <img src="img/Legumes-printaniers.png" alt="" class="images_of_recipe">
-                        <div class="overlay">
-                        </div>
-                    </div>
-                    <div class="bottom_card">
-                        <div class="bottom_card_info">
-                            <p>Ágúst 2016</p>
-                        </div>
-                        <div class="bottom_card_info">  
-                            <h3>Legumes printaiers</h3>
-                            <a href="#">See</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col col-4 col-md-5 col-sm-12 offset-col-sm-0 ">
-                    <div class="video_recipes_image">
-                        <img src="img/Play-Icon.png" alt="" class="images_play_button">
-                        <img src="img/blossoming-cookie.png" alt="" class="images_of_recipe">
-                        <div class="overlay">
-                        </div>
-                    </div>
-                    <div class="bottom_card">
-                        <div class="bottom_card_info">
-                            <p>Ágúst 2016</p>
-                        </div>
-                        <div class="bottom_card_info">  
-                            <h3>Blossoming cookie</h3>
-                            <a href="#">See</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col col-4 col-md-5 col-sm-12 offset-col-sm-0 ">
-                    <div class="video_recipes_image">
-                        <img src="img/Play-Icon.png" alt="" class="images_play_button">
-                        <img src="img/questches-pie.png" alt="" class="images_of_recipe">
-                        <div class="overlay">
-                        </div>
-                    </div>
-                    <div class="bottom_card">
-                        <div class="bottom_card_info">
-                            <p>Ágúst 2016</p>
-                        </div>
-                        <div class="bottom_card_info">  
-                            <h3>Blossoming cookie</h3>
-                            <a href="#">See</a>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="row">
-                <div class="col col-4">
-                    <hr>
-                </div>
-                <div class="col col-4 col-sm-12">
-                    <div class="center">
-                        <a href="pages/latest-recipes.html">
-                            <button>See more</button>
-                        </a>
-                    </div>
-                </div>
-                <div class="col col-4">
-                    <hr>
-                </div>
             </div>
         </div>
-    </section>
-    <!--                         Video recipes Endar Andrea og Alexia       -->
+            </section>
         </main>
-         <!--                         Footer Sammi og Silja                       -->
-         <footer>
+        <footer>
             <section class="subscribe">
                 <div class="grid">
                         <div class="row subscribe_container">
@@ -356,6 +346,5 @@
                 </div>            
             </section>
         </footer>
-        <!--                         Footer Endar Sammi og Silja                    -->
     </body>
 </html>

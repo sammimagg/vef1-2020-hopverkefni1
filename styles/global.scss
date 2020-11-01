@@ -62,27 +62,27 @@ border-top:1px solid $color-grey-lighter;
 color: transparent;
 margin-top: 42px;
 &:nth-child(1){
-    margin-right: auto;
+  margin-right: auto;
 }
 &:nth-child(2){
-    margin-left: auto;
+  margin-left: auto;
 }
 @include respond-to('medium'){
   display: none;
-}
+  }
 }
 .center{
-text-align: center;
+  text-align: center;
 }
 .center_horizontally{
-margin: auto 0;
+  margin: auto 0;
 }
 @include respond-to('small') {
-.mobile_hide{
+  .mobile_hide{
     display: none;
-}
-
-.center_mobile{
-  margin: 0em auto;
-}
+  }
+  .center_mobile{
+    margin: 0em auto;
+    text-align: center;
+  }
 }

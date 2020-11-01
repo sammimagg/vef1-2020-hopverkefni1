@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="is">
-
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,39 +7,43 @@
     <link rel="stylesheet" href="../grid-overlay.css">
     <link rel="stylesheet" href="../styles.css">
   </head>
-
   <body>
     <header class="header">
       <div class="grid">
-          <div class="row">
-              <div class="col col-2">
-                <a href="../index.html">
-                  <img src="../img/Logotype.png" class="logo"></img>
+        <div class="row">
+          <div class="col col-2 col-sm-0">
+              <a href="../index.html">
+                <img src="../img/Logotype.png" class="logo"></img>
               </a>
-              </div>
-              <div class="col col-10 col-sm-12">
-                  <input class="menu-btn" type="checkbox" id="menu-btn" />
-                  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-                  <ul class="menu">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="latest-recipes.html">Recipes</a></li>
-                    <li><a href="video-recipe.html">Videos</a></li>
-                    <li><a href="../index.html">About</a></li>
-                  </ul>
-              </div>
-          </div>    
+          </div>
+          <div class="col col-10 col-sm-12 header_fullscreen">
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="latest-recipes.html">Recipes</a></li>
+                <li><a href="video-recipe.html">Videos</a></li>
+                <li><a href="../index.html">About</a></li>
+            </ul>
+          </div>
+        </div>    
       </div>
     </header>
     <main>
       <section class="all_recipes">
-        <section class="grid">
+        <div class="grid">
           <div class="row">
-            <div class="all_recipes_heading col col-12 col-sm-12 offset-col-sm-0">
+            <div class="all_recipes_heading col col-4 col-sm-12">
               <p>Get ready to get busy</p>
               <div class=heading_inline>
-                <h2>All recipes</h2>
-                <h3><img src="../img/vector.png" alt=""> Only show video recipes</h3>
+                <h1>All recipes</h1>
               </div>
+            </div>
+            <div class="show_only_video col col-3 offset-col-5 col-sm-12 offset-col-sm-0">
+              <h3>
+                <img src="../img/vector.png" alt=""> 
+                Only show video recipes
+              </h3>
             </div>
           </div>
           <div class="row">    
@@ -396,7 +399,7 @@
                 <hr>
             </div>
           </div>
-        </section>
+        </div>
       </section>
     </main>
     <footer>
@@ -439,7 +442,6 @@
               </div>            
           </div>
       </section>
-  </footer>
+    </footer>
   </body>
-
 </html>  

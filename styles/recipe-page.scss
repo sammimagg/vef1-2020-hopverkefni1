@@ -1,15 +1,16 @@
-@import 'styles/config';
-
-
 .recipe_page_container {
   margin-bottom: 2rem;
-
+  & a{
+    color: $color-black;
+  }
+  & span{
+    font-weight: bold;
+  }
   .first-word {
     font-family: 'Poppins';
     font-weight: bold;
     font-size: 18px;
   }
-
   .second-word {
     font-family: 'Poppins';
     color: $color-grey;
@@ -18,11 +19,9 @@
     margin-right: 1rem;
   }
 }
-
 .img {
   margin-right: 1rem;
 }
-
 .icon {
   position: absolute;
   height: 37.5px;

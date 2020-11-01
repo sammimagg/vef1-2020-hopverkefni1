@@ -3,7 +3,6 @@
     max-width: 1290px;
     overflow: visible;
 }
-
 .our_book_is_out {
     background-color:$color-cream;
     margin: auto;
@@ -14,11 +13,9 @@
     margin-top: 5rem;
     margin-bottom: 10rem;
 }
-
 .our_books_heading {
     flex-direction: column;
     justify-content: center;
-
     & h1{
         font-size: 1em;
         color:$color-gold;
@@ -35,16 +32,12 @@
     flex-direction: column;
     margin: auto;
     width: 100%;
-
     @media (max-width: 499px){
-
     }
 }
-
 .our_books_heading {
     flex-direction: column;
     justify-content: center;
-
     & h1{
         font-size: 1em;
         color:$color-gold;
@@ -55,15 +48,12 @@
         margin-bottom: 1em;
     }
 }
-
 .our_book_text {
     color: $color-grey;
     line-height: 32px;
 }
-
 @media (max-width: 499px){
     .our_books_heading{
-
         & p{
             margin-bottom: 0.5em;
             text-align: center;
@@ -74,7 +64,6 @@
         }
     }
 }
-
 .our_books_img {
     width: 100%;
     background: url(recipebook.png); 
@@ -82,7 +71,6 @@
     top: 100px;
     z-index: 50;
 }
-
 .book_img {
     position: relative;
     max-width: 100%;
