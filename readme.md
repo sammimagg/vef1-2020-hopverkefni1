@@ -6,12 +6,9 @@
 
 
 ## Lýsing á verkefni
-Verkefnið er unnið af nemendum í áfanganum Vefforritun 1 við Háskóla Íslands. Markmið verkefnisins felst í því að smíða vef frá grunni eftir gefinni forskrift.  
-Hönnun á útliti vefs var gefin í Figma þar sem hægt var að nálgast efni, myndir, liti, stærðir og fleira. 
+Verkefnið er unnið af nemendum í áfanganum Vefforritun 1 við Háskóla Íslands. Markmið verkefnisins felst í því að smíða vef frá grunni eftir gefinni forskrift. Hönnun á útliti vefs var gefin í Figma þar sem hægt var að nálgast efni, myndir, liti, stærðir og fleira. 
 
-Útlit vefsíðunnar er útfært í skránni `styles.scss` sem síðan er þýtt yfir í skránna `styles.css`. Undir möppunni `styles/` er að finna `.scss`skrár fyrir mismunandi 
-hluta af vefsíðunni.
-Skráin `.confiq.scss` hefur að geyma stillingar með `.scss` breytum fyrir mikið notaðar stærðir.
+Útlit vefsíðunnar er útfært í skránni `styles.scss` sem síðan er þýtt yfir í skránna `styles.css`. Undir möppunni `styles/` er að finna `.scss`skrár fyrir mismunandi hluta af vefsíðunni. Skráin `.confiq.scss` hefur að geyma stillingar með `.scss` breytum fyrir mikið notaðar stærðir.
 
 
 Verkefnið er skipt upp í eftirfarandi möppur:
