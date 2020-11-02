@@ -2,6 +2,8 @@
 
 ## Upplýsingar um hvernig keyra skuli verkefnið
 
+Áður en verkefnið er keyrt þarf að setja upp Node.js sem er gert með því að opna Terminal / Command Prompt og keyra skipun `npm install` í skipanaglugga. Því næst skal keyra verkefnið með skipuninni `npm run dev`. Að því loknu skal keyra styleint með því skipuninni `npm run lint -s`.
+
 
 ## Lýsing á verkefni
 Verkefnið er unnið af nemendum í áfanganum Vefforritun 1 við Háskóla Íslands. Markmið verkefnisins felst í því að smíða vef frá grunni eftir gefinni forskrift.  
